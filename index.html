@@ -2,9 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scaleable=no,maximum-scale=1,minimum-scale=1"
+    />
     <title>fang88</title>
     <link rel="stylesheet" href="./fangstyle.css" />
+    <script src="./index.js"></script>
   </head>
 
   <body>
@@ -124,5 +128,111 @@
         <div class="triangle"></div>
       </div>
     </main>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .rwd-box {
+        width: 25%;
+        padding: 10px;
+      }
+      .card {
+        padding: 10px;
+        border: 1px solid palevioletred;
+      }
+      .card .photo {
+        background-color: tomato;
+        height: 100px;
+      }
+      .card .title2 {
+        font-size: 0.8em;
+        font-weight: bold;
+      }
+      .card .content {
+        font-size: 0.5em;
+        color: gray;
+      }
+      @media screen and (max-width: 480px) {
+        .rwd-box {
+          width: 100%;
+        }
+      }
+      @media screen and (min-width: 481px) and (max-width: 768px) {
+        .rwd-box {
+          width: 50%;
+        }
+      }
+      @media screen and (min-width: 769px) and (max-width: 1200px) {
+        .rwd-box {
+          width: 33%;
+        }
+      }
+      @media screen and (min-width: 1200px) {
+      }
+    </style>
+    <div class="container">
+      <div class="rwd-box">
+        <div class="card">
+          <div class="photo"></div>
+          <div class="title2">card title</div>
+          <div class="content">card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="photo"></div>
+          <div class="title2">card title</div>
+          <div class="content">card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="photo"></div>
+          <div class="title2">card title</div>
+          <div class="content">card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="photo"></div>
+          <div class="title2">card title</div>
+          <div class="content">card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="photo"></div>
+          <div class="title2">card title</div>
+          <div class="content">card content goes here.</div>
+        </div>
+      </div>
+      <div class="rwd-box">
+        <div class="card">
+          <div class="photo"></div>
+          <div class="title2">card title</div>
+          <div class="content">card content goes here.</div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid rgb(134, 206, 230, 0.4);
+        border-top: 5px solid rgb(41, 98, 242);
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+    <div class="spinner"></div>
   </body>
 </html>

@@ -4,6 +4,7 @@
 }
 * {
   font-size: 1em;
+  box-sizing: border-box;
 }
 .title{
   background: url(./fangimg/0877871_PE611235_S4.jpg)center no-repeat;
@@ -35,7 +36,7 @@ background-color: linear-gradient(to right, antiquewhite,palevioletred,antiquewh
   background-color: yellowgreen; /*按鈕顏色*/
   color:aliceblue;
   text-align: center;
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
   margin: 6px;
   border-radius: 50%;
   font-weight: bold;
@@ -50,7 +51,7 @@ background-color: linear-gradient(to right, antiquewhite,palevioletred,antiquewh
   background-color: #f56969;
   color: aliceblue;
   text-align: center;
-  padding: 10px 10px;
+  /* padding: 10px 10px; */
   margin: 6px;
   border-radius: 50%;
   font-weight: bold;
